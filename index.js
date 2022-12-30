@@ -1,11 +1,12 @@
 const Discord = require("discord.js"), 
     Client = new Discord.Client({
         fetchAllMembers: true
-    }), 
+    }),
+    conf_token = require('./conf'),
     config = require('./config.json'),
     fs = require('fs')
 
-Client.login(config.token)
+Client.login(conf_token.jwtSecret)
 Client.commands = new Discord.Collection()
 
 fs.readdir('./commands', (err, files) => {

@@ -1,6 +1,6 @@
 {
   "name": "dacbot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bot discord",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
   "author": "Romain Doyen",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "discord.js": "^12.5.1",
+    "dotenv": "^16.0.3"
   }
 }
